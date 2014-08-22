@@ -4,22 +4,22 @@
 /* Event panel */
 /* Event panel arrow */
 /* Timestamp */
-ul.timeline {
+.timeline {
   position: relative;
   list-style: none;
   padding-bottom: 200px;
   margin: 0;
   padding: 0;
 }
-ul.timeline:before,
-ul.timeline:after {
+.timeline:before,
+.timeline:after {
   content: " ";
   display: table;
 }
-ul.timeline:after {
+.timeline:after {
   clear: both;
 }
-ul.timeline:before {
+.timeline:before {
   z-index: -1;
   display: block;
   content: "";
@@ -31,119 +31,119 @@ ul.timeline:before {
   background-color: #eeeeee;
 }
 @media screen and (min-width: 480px) {
-  ul.timeline:before {
+  .timeline:before {
     left: 50%;
   }
 }
 @media screen and (max-width: 479px) {
-  ul.timeline:before {
+  .timeline:before {
     left: 25px;
   }
 }
-ul.timeline > li,
-ul.timeline > div {
+.timeline > li,
+.timeline > div {
   margin-bottom: 20px;
 }
-ul.timeline > li:first-child,
-ul.timeline > div:first-child {
+.timeline > li:first-child,
+.timeline > div:first-child {
   margin-top: 20px;
 }
-ul.timeline li.event {
+.timeline li.event {
   position: relative;
   display: block;
   min-height: 50px;
 }
-ul.timeline li.event:before,
-ul.timeline li.event:after {
+.timeline li.event:before,
+.timeline li.event:after {
   content: " ";
   display: table;
 }
-ul.timeline li.event:after {
+.timeline li.event:after {
   clear: both;
 }
 @media screen and (min-width: 480px) {
-  ul.timeline li.event {
+  .timeline li.event {
     width: calc(50% + 25px);
   }
-  ul.timeline li.event:nth-of-type(even) {
+  .timeline li.event:nth-of-type(even) {
     float: right;
   }
-  ul.timeline li.event:nth-of-type(even) .tl-badge {
+  .timeline li.event:nth-of-type(even) .tl-badge {
     float: left;
   }
-  ul.timeline li.event:nth-of-type(even) .tl-panel {
+  .timeline li.event:nth-of-type(even) .tl-panel {
     margin-left: 75px;
   }
-  ul.timeline li.event:nth-of-type(even) .tl-panel:after,
-  ul.timeline li.event:nth-of-type(even) .tl-panel:before {
+  .timeline li.event:nth-of-type(even) .tl-panel:after,
+  .timeline li.event:nth-of-type(even) .tl-panel:before {
     right: 100%;
     margin-right: -76px;
     border-style: solid;
     border-color: transparent #007bff transparent transparent;
   }
-  ul.timeline li.event:nth-of-type(even) .tl-panel:after {
+  .timeline li.event:nth-of-type(even) .tl-panel:after {
     border-color: transparent #ffffff transparent transparent;
     border-width: 15px 15px 15px 0;
   }
-  ul.timeline li.event:nth-of-type(even) .tl-panel:before {
+  .timeline li.event:nth-of-type(even) .tl-panel:before {
     margin-top: -1px;
     border-color: transparent #dcdcdc transparent transparent;
     border-width: 16px 16px 16px 0;
   }
-  ul.timeline li.event:nth-of-type(odd) {
+  .timeline li.event:nth-of-type(odd) {
     float: left;
   }
-  ul.timeline li.event:nth-of-type(odd) .tl-badge {
+  .timeline li.event:nth-of-type(odd) .tl-badge {
     float: right;
   }
-  ul.timeline li.event:nth-of-type(odd) .tl-panel {
+  .timeline li.event:nth-of-type(odd) .tl-panel {
     margin-right: 75px;
   }
-  ul.timeline li.event:nth-of-type(odd) .tl-panel:after,
-  ul.timeline li.event:nth-of-type(odd) .tl-panel:before {
+  .timeline li.event:nth-of-type(odd) .tl-panel:after,
+  .timeline li.event:nth-of-type(odd) .tl-panel:before {
     left: 100%;
     margin-left: -76px;
     border-style: solid;
   }
-  ul.timeline li.event:nth-of-type(odd) .tl-panel:after {
+  .timeline li.event:nth-of-type(odd) .tl-panel:after {
     border-color: transparent transparent transparent #ffffff;
     border-width: 15px 0 15px 15px;
   }
-  ul.timeline li.event:nth-of-type(odd) .tl-panel:before {
+  .timeline li.event:nth-of-type(odd) .tl-panel:before {
     margin-top: -1px;
     border-color: transparent transparent transparent #dcdcdc;
     border-width: 16px 0 16px 16px;
   }
 }
 @media screen and (max-width: 479px) {
-  ul.timeline li.event {
+  .timeline li.event {
     width: 100%;
     float: right;
   }
-  ul.timeline li.event .tl-badge {
+  .timeline li.event .tl-badge {
     float: left;
   }
-  ul.timeline li.event .tl-panel {
+  .timeline li.event .tl-panel {
     margin-left: 75px;
   }
-  ul.timeline li.event .tl-panel:after,
-  ul.timeline li.event .tl-panel:before {
+  .timeline li.event .tl-panel:after,
+  .timeline li.event .tl-panel:before {
     right: 100%;
     margin-right: -76px;
     border-style: solid;
     border-color: transparent #007bff transparent transparent;
   }
-  ul.timeline li.event .tl-panel:after {
+  .timeline li.event .tl-panel:after {
     border-color: transparent #ffffff transparent transparent;
     border-width: 15px 15px 15px 0;
   }
-  ul.timeline li.event .tl-panel:before {
+  .timeline li.event .tl-panel:before {
     margin-top: -1px;
     border-color: transparent #dcdcdc transparent transparent;
     border-width: 16px 16px 16px 0;
   }
 }
-ul.timeline li.event .tl-badge {
+.timeline li.event .tl-badge {
   margin-top: 20px;
   width: 50px;
   height: 50px;
@@ -153,35 +153,35 @@ ul.timeline li.event .tl-badge {
   background-color: #b63b3b;
   color: #ffffff;
 }
-ul.timeline li.event .tl-panel {
+.timeline li.event .tl-panel {
   border: 1px solid #dcdcdc;
   border-radius: 3px;
   padding: 20px;
 }
-ul.timeline li.event .tl-panel:after,
-ul.timeline li.event .tl-panel:before {
+.timeline li.event .tl-panel:after,
+.timeline li.event .tl-panel:before {
   content: "";
   position: absolute;
   width: 0;
   height: 0;
   border-style: solid;
 }
-ul.timeline li.event .tl-panel:after {
+.timeline li.event .tl-panel:after {
   z-index: 2;
   top: 30px;
 }
-ul.timeline li.event .tl-panel:before {
+.timeline li.event .tl-panel:before {
   top: 30px;
 }
-ul.timeline li.event .tl-panel img {
+.timeline li.event .tl-panel img {
   width: 100%;
   height: auto;
 }
-ul.timeline li.event .tl-panel h1,
-ul.timeline li.event .tl-panel p {
+.timeline li.event .tl-panel h1,
+.timeline li.event .tl-panel p {
   text-align: center;
 }
-ul.timeline .timestamp {
+.timeline .timestamp {
   display: block;
   float: left;
   color: #9c9c9c;
@@ -189,7 +189,7 @@ ul.timeline .timestamp {
   font-size: 18px;
   margin-top: 20px;
 }
-ul.timeline .timestamp p {
+.timeline .timestamp p {
   background-color: white;
   width: 50px;
   margin: 0 auto;
@@ -197,12 +197,17 @@ ul.timeline .timestamp p {
   padding-bottom: 10px;
 }
 @media screen and (min-width: 480px) {
-  ul.timeline .timestamp {
+  .timeline .timestamp {
     width: 100%;
   }
 }
 @media screen and (max-width: 479px) {
-  ul.timeline .timestamp {
+  .timeline .timestamp {
     width: 50px;
   }
+}
+.timeline.js {
+  /*
+  * Styles to apply only when the Javascript is active
+  */
 }
