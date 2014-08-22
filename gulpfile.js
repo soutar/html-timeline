@@ -16,7 +16,7 @@ gulp.task('less', function() {
   return gulp.src('src/less/timeline.less')
     .pipe(less({
       //sourceMap: true,
-      //compress: true
+      compress: true
     }))
     .on('error', gutil.log)
     .on('error', gutil.beep)
